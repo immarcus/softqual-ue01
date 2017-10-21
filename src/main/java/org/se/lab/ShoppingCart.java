@@ -33,7 +33,6 @@ public class ShoppingCart {
 		}
 		return s.toString();
 	}
-	
 
 	public String toXml() {
 		StringBuilder xml = new StringBuilder("<shoppingcard id=\"" + getId() + "\">\n");
