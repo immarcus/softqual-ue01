@@ -1,17 +1,21 @@
 [17:58, 8.10.2017] Georg Wresnik: ShoppingCart Excercise
 
+pilot :     Marcus Wallner
+navigator:  Georg Wresnik
+
 - enum Type (BOOK, CD, DVD) -> ändern in eigene abstrakte Klasse Artikel -> Klassen Book, Cd, Dvd (wegen Tempfeld)
-- unötige Kommentrare entfernen
+- unötige Kommentrare entfernt
 - Alle Membervariablen von Article auf private setzen und Getter/Setter Methoden erstellen
 - List<Article> statt nur Arraylist in ShoppingCart und auf private setzen -> wird nicht public benötigt
 - Arraylist ebenfalls Type "Article" hinzugefgt, damit werden nur mehr Article als Elemente zugelassen.
 - @Override vor Methode toString() hat gefehlt, muss überschrieben werden weil von Klasse Object abgeleitet.
 - Tests anpassen -> wegen Umstellung von enum auf Objekte
-- Add Methode um erstellt um Article in der Shopping Card hinzuzufügen
+- Add Methode erstellt um Article in der Shopping Card hinzuzufügen
 - Methode toString in den Klassen Cd, Dvd und Book einzeln definiert um Author bequem ausgeben zu können (in Shopping Card muss dann nichts überprüft werden)
 - ShoppingCart Konstruktor anlegen der die id setzt (Getter/Setter Methoden ebenfalls erstellt)
 
+Bad Smells:
 - Switch Statements (im toString, toXml)
 - Temporary Field (in der Article Klasse)
 - Long Method (toString, toXml)
-- Unötige Kommentare
+- Unnötige Kommentare
